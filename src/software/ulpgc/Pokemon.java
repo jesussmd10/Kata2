@@ -17,6 +17,7 @@ public class Pokemon {
         return pokemon;
     }
 
+
     public String getType() {
         return type;
     }

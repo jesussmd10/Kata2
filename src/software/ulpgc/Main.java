@@ -10,7 +10,12 @@ public class Main {
     public static void main(String[] args) throws IOException {
         File file = new File("C:/Users/Jesus Santacruz/Desktop/IS2/pokemon.csv");
         List<Pokemon> pokemons = new FileTitleLoader(file, new TsvTitleDeserializer()).load();
-        Map<String, Boolean> stats = new HashMap<>();
-        System.out.println(pokemons);
-    }
-}
+        Map<String, Integer> stats = new HashMap<>();
+        for(Pokemon pokemon : pokemons){
+            stats.put(pokemon.getPokemon(), pokemon.getGenerationPokemon());
+            System.out.println("Pokemon: " + pokemon.getPokemon() + ", Generación: " + pokemon.getGenerationPokemon());
+        }
+
+        }
+ }
+
