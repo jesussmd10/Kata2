@@ -7,11 +7,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FileTitleLoader implements TitleLoader{
+public class FilePokemonLoader implements PokemonLoader{
     private final File file;
-    private final TitleDeserializer deserializer;
+    private final PokemonDeserializer deserializer;
 
-    public FileTitleLoader(File file, TitleDeserializer deserializer) {
+    public FilePokemonLoader(File file, PokemonDeserializer deserializer) {
         this.file = file;
         this.deserializer = deserializer;
     }

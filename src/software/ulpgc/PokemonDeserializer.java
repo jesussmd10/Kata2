@@ -1,5 +1,5 @@
 package software.ulpgc;
 
-public interface TitleDeserializer {
+public interface PokemonDeserializer {
     Pokemon deserialize(String line);
 }
