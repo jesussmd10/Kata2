@@ -1,6 +1,6 @@
 package software.ulpgc;
 
-public class TsvTitleDeserializer implements TitleDeserializer {
+public class TsvPokemonDeserializer implements PokemonDeserializer {
     @Override
     public Pokemon deserialize(String line) {
         return deserialize(line.split(","));

@@ -9,7 +9,7 @@ import java.util.Map;
 public class Main {
     public static void main(String[] args) throws IOException {
         File file = new File("C:/Users/Jesus Santacruz/Desktop/IS2/pokemon.csv");
-        List<Pokemon> pokemons = new FileTitleLoader(file, new TsvTitleDeserializer()).load();
+        List<Pokemon> pokemons = new FilePokemonLoader(file, new TsvPokemonDeserializer()).load();
         Map<String, Integer> stats = new HashMap<>();
         for(Pokemon pokemon : pokemons){
             stats.put(pokemon.getPokemon(), pokemon.getGenerationPokemon());
